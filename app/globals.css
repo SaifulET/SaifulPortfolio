@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Pause animation on hover */
+@keyframes scroll-preview {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-preview {
+  animation: scroll-preview 20s linear infinite;
+}
+
+.group:hover .animate-scroll-preview {
+  animation-play-state: paused;
+}
