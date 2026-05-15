@@ -22,7 +22,8 @@ export default function Hero() {
   }, []);
   const currentWord = roles[index].split('');
   return (
-    <section id='home' className="flex min-h-[calc(100vh-73px)] flex-col-reverse items-center justify-center gap-12 bg-[url('https://static.vecteezy.com/system/resources/previews/010/224/531/original/black-abstract-background-wallpaper-design-free-vector.jpg')] bg-repeat bg-[length:10px_16px] px-4 py-12 sm:px-6 md:py-16 lg:flex-row lg:justify-between lg:px-10">
+    <section id='home' className="bg-[url('https://static.vecteezy.com/system/resources/previews/010/224/531/original/black-abstract-background-wallpaper-design-free-vector.jpg')] bg-repeat bg-[length:10px_16px] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex min-h-[calc(100vh-73px)] max-w-6xl flex-col-reverse items-center justify-center gap-12 py-16 lg:flex-row lg:justify-between">
       {/* Left */}
       
       <div className="w-full max-w-2xl flex-1 text-center lg:text-left">
@@ -96,6 +97,7 @@ export default function Hero() {
           />
           
         </motion.div>
+      </div>
       </div>
     </section>
   );
